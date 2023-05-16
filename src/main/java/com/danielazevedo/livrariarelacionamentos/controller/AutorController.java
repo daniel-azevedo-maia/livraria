@@ -1,6 +1,8 @@
 package com.danielazevedo.livrariarelacionamentos.controller;
 
+import com.danielazevedo.livrariarelacionamentos.exception.EntidadeNaoEncontradaException;
 import com.danielazevedo.livrariarelacionamentos.model.Autor;
+import com.danielazevedo.livrariarelacionamentos.repository.AutorRepository;
 import com.danielazevedo.livrariarelacionamentos.service.AutorService;
 import com.fasterxml.jackson.databind.util.BeanUtil;
 import org.apache.coyote.Response;
@@ -34,6 +36,7 @@ public class AutorController {
     }
 
     // Buscar por ID:
+    
     @GetMapping("/{autorId}")
     public ResponseEntity<Autor> buscarPorId(@PathVariable Long autorId) {
         Optional<Autor> autor = autorRepository.findById(autorId);
@@ -46,6 +49,7 @@ public class AutorController {
     }
 
     // Cadastrar autor:
+    
     @PostMapping("/novo")
     @ResponseStatus(HttpStatus.CREATED)
     public Autor cadastrarAutor(@RequestBody Autor autor) {
@@ -70,6 +74,8 @@ public class AutorController {
         return ResponseEntity.notFound().build();
 
     }
+    
+    // Deletar por ID:
 
     @DeleteMapping("/excluir/{autorId}")
     @ResponseStatus(HttpStatus.NO_CONTENT)

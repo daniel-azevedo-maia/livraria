@@ -1,4 +1,4 @@
-package com.danielazevedo.livrariarelacionamentos.controller;
+package com.danielazevedo.livrariarelacionamentos.repository;
 
 import com.danielazevedo.livrariarelacionamentos.model.Autor;
 import jakarta.transaction.Transactional;

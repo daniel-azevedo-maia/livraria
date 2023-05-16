@@ -1,8 +1,9 @@
 package com.danielazevedo.livrariarelacionamentos.service;
 
-import com.danielazevedo.livrariarelacionamentos.controller.AutorRepository;
-import com.danielazevedo.livrariarelacionamentos.controller.EntidadeNaoEncontradaException;
+import com.danielazevedo.livrariarelacionamentos.exception.EntidadeNaoEncontradaException;
 import com.danielazevedo.livrariarelacionamentos.model.Autor;
+import com.danielazevedo.livrariarelacionamentos.repository.AutorRepository;
+
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 

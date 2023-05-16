@@ -1,4 +1,4 @@
-package com.danielazevedo.livrariarelacionamentos.controller;
+package com.danielazevedo.livrariarelacionamentos.exception;
 
 public class EntidadeNaoEncontradaException extends RuntimeException {
 
