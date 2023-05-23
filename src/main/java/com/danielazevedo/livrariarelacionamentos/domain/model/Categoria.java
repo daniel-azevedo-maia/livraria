@@ -1,4 +1,4 @@
-package com.danielazevedo.livrariarelacionamentos.model;
+package com.danielazevedo.livrariarelacionamentos.domain.model;
 
 import jakarta.persistence.*;
 import lombok.Data;

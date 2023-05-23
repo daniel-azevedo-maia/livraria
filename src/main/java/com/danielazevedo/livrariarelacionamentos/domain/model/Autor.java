@@ -1,4 +1,4 @@
-package com.danielazevedo.livrariarelacionamentos.model;
+package com.danielazevedo.livrariarelacionamentos.domain.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +13,8 @@ import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.CascadeType;
 
 @Entity
 @Data
@@ -29,6 +31,7 @@ public class Autor {
 
     @JsonIgnore
     @OneToMany(mappedBy = "autor")
+    @Cascade(CascadeType.ALL)
     private List<Livro> livros = new ArrayList<>();
 
 }

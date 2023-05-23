@@ -1,9 +1,8 @@
-package com.danielazevedo.livrariarelacionamentos.model;
+package com.danielazevedo.livrariarelacionamentos.domain.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.Generated;
 
 import java.util.ArrayList;
 import java.util.List;

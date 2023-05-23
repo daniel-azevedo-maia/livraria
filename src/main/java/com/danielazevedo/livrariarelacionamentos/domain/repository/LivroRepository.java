@@ -1,10 +1,9 @@
-package com.danielazevedo.livrariarelacionamentos.repository;
+package com.danielazevedo.livrariarelacionamentos.domain.repository;
 
+import com.danielazevedo.livrariarelacionamentos.domain.model.Livro;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
-
-import com.danielazevedo.livrariarelacionamentos.model.Livro;
 
 @Repository
 @Transactional

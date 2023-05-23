@@ -1,6 +1,6 @@
-package com.danielazevedo.livrariarelacionamentos.repository;
+package com.danielazevedo.livrariarelacionamentos.domain.repository;
 
-import com.danielazevedo.livrariarelacionamentos.model.Autor;
+import com.danielazevedo.livrariarelacionamentos.domain.model.Autor;
 import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
